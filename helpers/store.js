@@ -15,7 +15,6 @@ export function saveData(store) {
 }
 
 export function drawTodo(store) {
-  console.log(store);
   store.todoContainer.innerHTML = "";
   const fragment = document.createDocumentFragment();
   store.tasks.forEach((task) => {

@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   store.saveBtn.addEventListener("click", () => {
+    if(store.currentState === "edit") return;
     main(store);
   });
 
   function main(store) {
     saveEvent(store);
     saveData(store);
-    console.log(2);
     drawTodo(store);
   }
 
