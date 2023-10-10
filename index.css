@@ -1,249 +1,250 @@
-@import url('https://fonts.cdnfonts.com/css/overpass');
+@import url("https://fonts.cdnfonts.com/css/overpass");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(18, 10, 140);
+  background-color: rgb(18, 10, 140);
 }
 
 #root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.to-do-list  {
-    margin-top: 75px;
-    min-width: 687px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.to-do-list {
+  margin-top: 75px;
+  min-width: 687px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .to-do-list-header {
-    min-width: 687px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+  min-width: 687px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .to-do-list-header-button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
 }
 
 .to-do-list-header-text {
-    background: linear-gradient(274deg, #C0F 0%, #5756FF 35.29%, #07FDFD 100%);
-    background-clip: text;
-    font-family: Overpass;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 64rmal;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    flex-grow: 1;
-    margin-right: 120px;
+  background: linear-gradient(274deg, #c0f 0%, #5756ff 35.29%, #07fdfd 100%);
+  background-clip: text;
+  font-family: Overpass;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 64rmal;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  flex-grow: 1;
+  margin-right: 120px;
 }
 
 .to-do-list-body {
-    justify-content: center;
-    margin-top: 20px;
-    min-width: 687px;
+  justify-content: center;
+  margin-top: 20px;
+  min-width: 687px;
 }
 
 .to-do-list-body-header {
-    display: flex;
+  display: flex;
 }
 
 .to-do-list-body-header * {
-    border: none;
-    min-height: 64px;
+  border: none;
+  min-height: 64px;
 }
 
 #to-do-list-body-header-input {
-    text-indent: 20px;
+  text-indent: 20px;
 }
 
 #to-do-list-body-header-input::placeholder {
-    color: #5A5A5A;
-    text-transform: capitalize;
-    opacity: 0.5;
+  color: #5a5a5a;
+  text-transform: capitalize;
+  opacity: 0.5;
 }
 
 #to-do-list-body-header-input:focus::placeholder {
-    color: transparent;
+  color: transparent;
 }
 
 .to-do-list-body-header-button {
-    border: none;
-    cursor: pointer;
-    gap: 10px;
-    align-self: stretch;
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    min-width: 100px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: #FFF;
-    background: linear-gradient(64deg, #07FDFD 0%, #4D69FE 46.88%, #C0F 100%);
+  border: none;
+  cursor: pointer;
+  gap: 10px;
+  align-self: stretch;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  min-width: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  background: linear-gradient(64deg, #07fdfd 0%, #4d69fe 46.88%, #c0f 100%);
 }
 
 .to-do-list-body-header-button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .to-do-list-body-header-button:active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .lists {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .to-do {
-    list-style-type: none;
-    flex-direction: column;
+  list-style-type: none;
+  flex-direction: column;
 }
 
 li:not(:first-child) {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
-.to-do, .to-do-title {
-    display: flex;
+.to-do,
+.to-do-title {
+  display: flex;
 }
 
 .to-do-title {
-    min-height: 64px;
-    border-radius: 11px;
-    margin: auto;
-    padding: 16px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
+  min-height: 64px;
+  border-radius: 11px;
+  margin: auto;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
 }
 
 .to-do-title h4 {
-    color: #5A5A5A;
+  color: #5a5a5a;
 }
 
 .icons img {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.icons :not(:last-child)  {
-    margin-right: 9px;
+.icons :not(:last-child) {
+  margin-right: 9px;
 }
 
 .icons button:active {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .icons button {
-    border: none;
-    background-color: white;
+  border: none;
+  background-color: white;
 }
 
 .done {
-    text-decoration: line-through;
-    opacity: 0.5;
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .edit-save-button {
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    gap: 10px;
-    border: none;
-    align-self: stretch;
-    text-align: center;
-    text-transform: uppercase;
-    min-width: 100px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: #FFF;
-    background: linear-gradient(64deg, #07FDFD 0%, #4D69FE 46.88%, #C0F 100%);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  gap: 10px;
+  border: none;
+  align-self: stretch;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #fff;
+  background: linear-gradient(64deg, #07fdfd 0%, #4d69fe 46.88%, #c0f 100%);
 }
 
 .edit-save-button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .edit-save-button:active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .edit-input {
-    border: 1px solid black;
-    color: #5A5A5A;
-    min-width: 550px;
+  border: 1px solid black;
+  color: #5a5a5a;
+  min-width: 550px;
 }
 
 .text {
-    font-family: Overpass;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64rmal;
+  font-family: Overpass;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64rmal;
 }
 
 .input {
-    min-height: 64px;
-    border: none;
-    outline: none;
-    display: flex;
-    align-items: center;
-    min-width: 587px;
-    border-top-left-radius: 10px;
-    color: #5A5A5A;
-    border-bottom-left-radius: 10px;
+  min-height: 64px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  min-width: 587px;
+  border-top-left-radius: 10px;
+  color: #5a5a5a;
+  border-bottom-left-radius: 10px;
 }
 
 .delete-item {
-    border: 4px solid #C0F;
-    display: none;
-    background-color: #FFF;
-    border-radius: 4px;
-    min-height: 200px;
-    min-width: 400px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  border: 4px solid #c0f;
+  display: none;
+  background-color: #fff;
+  border-radius: 4px;
+  min-height: 200px;
+  min-width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .delete-item-text {
-    margin-top: 50px;
-    color: var(--turqua-6, #008594);
-    font-family: Overpass;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
+  margin-top: 50px;
+  color: var(--turqua-6, #008594);
+  font-family: Overpass;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .delete-item-button {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .delete-item-button button {
-    min-width: 50px;
-    color: var(--turqua-8, #174348);
-    font-family: Overpass;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    text-transform: capitalize;
+  min-width: 50px;
+  color: var(--turqua-8, #174348);
+  font-family: Overpass;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: capitalize;
 }

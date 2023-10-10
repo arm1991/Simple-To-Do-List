@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet"  href="./index.css">
-    <script type="module" src="./index.js" ></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
     <div id="root">
-        <div class="to-do-list">
-            <div class="to-do-list-header">
-                <div class="to-do-list-header-button">
-                    <label for="hide">Hide completed</label>
-                    <input type="checkbox" class="hide" id="hide-button" name="hide">
-                </div>
-                <span class="to-do-list-header-text">my to do list</span>
-            </div>
-            <div class="to-do-list-body">
-                <div class="to-do-list-body-header">
-                    <input type="text" placeholder="arman's to do list" id="to-do-list-body-header-input" class="text input">
-                    <button id="save" class="text to-do-list-body-header-button">save</button>
-                </div>
-                <div class="lists">
-                    <ul class="to-do"></ul>
-                </div>
-            </div>
+      <div class="to-do-list">
+        <div class="to-do-list-header">
+          <div class="to-do-list-header-button">
+            <label for="hide">Hide completed</label>
+            <input type="checkbox" class="hide" id="hide-button" name="hide" />
+          </div>
+          <span class="to-do-list-header-text">my to do list</span>
         </div>
-        <div class="delete-item">
-            <div class="delete-item-text">
-                <span>Are you sure you want to delete?</span>
-            </div>
-            <div class="delete-item-button">
-                <button id="yes">Yes</button>
-                <button id="no">No</button>
-            </div>
+        <div class="to-do-list-body">
+          <div class="to-do-list-body-header">
+            <input
+              type="text"
+              placeholder="arman's to do list"
+              id="to-do-list-body-header-input"
+              class="text input"
+            />
+            <button id="save" class="text to-do-list-body-header-button">
+              save
+            </button>
+          </div>
+          <div class="lists">
+            <ul class="to-do"></ul>
+          </div>
         </div>
+      </div>
+      <div class="delete-item">
+        <div class="delete-item-text">
+          <span>Are you sure you want to delete?</span>
+        </div>
+        <div class="delete-item-button">
+          <button id="yes">Yes</button>
+          <button id="no">No</button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
